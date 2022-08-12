@@ -1,6 +1,10 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  /* grid-template-rows: 12.5% 12.5% 62.5% 12.5%; */
 }
 
 .container {
@@ -20,15 +24,19 @@ body, html {
 }
 
 .header {
-  background-color: #FFDE22;
+  background-color: #ffde22;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  /* grid-row-start: 1;
+  grid-row-end: -1; */
 }
 
 .sidebar {
-  background-color: #FF7755;
+  background-color: #ff7755;
 }
 
 .nav {
-  background-color: #00DDFF;
+  background-color: #00ddff;
 }
 
 .article {
